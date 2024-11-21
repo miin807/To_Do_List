@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lista"
+        android:layout_width="229dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="28dp"
+        android:text="To Do List"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="381dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="493dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lista">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/deberes"
+                android:layout_width="142dp"
+                android:layout_height="37dp"
+                android:text="Deberes" />
+
+            <CheckBox
+                android:id="@+id/hecha1"
+                android:layout_width="98dp"
+                android:layout_height="50dp"
+                android:text="Hecha" />
+
+            <Button
+                android:id="@+id/eliminar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/comprar"
+                android:layout_width="143dp"
+                android:layout_height="38dp"
+                android:text="Comprar pan" />
+
+            <CheckBox
+                android:id="@+id/hecha2"
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:text="Hecha" />
+
+            <Button
+                android:id="@+id/eliminar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
